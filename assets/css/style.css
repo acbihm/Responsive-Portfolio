@@ -1,0 +1,521 @@
+/* ========================================     GLOBAL GENERAL STYLES     ======================================== */
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #777777;
+    background-image: url("../images/concrete-texture.png")
+}
+
+h1, h2 {
+    font-family: "Georgia", "Times", "Times New Roman", serif;
+    padding: 0 25px;
+}
+
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+.button1 {
+    background-color: #4aaaa5;
+    color: white;
+    padding: 5px 7px;
+    border-color: gray;
+    border-radius: 7px;
+}
+
+.button1:hover {
+    background-color: gray;
+    color: white;
+}
+
+.clear {
+    clear: both;
+}
+
+.wrapper {
+    width: 960px;
+    margin: 0 auto;
+}
+
+        /* ========================================     GLOBAL HEADER/NAV STYLES     ======================================== */
+
+
+nav > a {
+    border-radius: 7px;
+    color: white;
+    padding: 5px 6px;
+    border-color: gray;
+    background-color: #dff1f1;
+}
+
+header {
+    font-family: "Georgia", "Times", "Times New Roman", serif;
+    color:#ffffff;
+    background-color:#4aaaa5;
+    border-radius: 6px;
+    font-size: 3em;
+    border-color: #cccccc;
+    width: 257px;
+    display: inline-block;
+    padding-left: 20px;
+}
+
+.top {
+    top: 0;
+    position: fixed;
+    height: 55px;
+    width: 955px;
+    background-color: #ffffff;
+    border: 3px solid #dddddd;
+    z-index: 2;
+    border-radius: 7px;
+}
+
+.main {
+    background-color: #ffffff;
+    border: 3px solid #dddddd;
+    min-height: 554px;
+    position: relative;
+    padding: 0 20px;
+    border-radius: 7px;   
+}
+
+footer {
+    background-color: #666666;
+    border-top: 8px solid #4aaaa5;
+    font-size: .65em;
+    padding-top: 9px;
+    height: 21px;
+    margin-top: 30px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: lightgray;
+}
+
+textarea {
+    margin: 3px 0;
+    border-radius: 7px;
+}
+
+textarea:focus {
+    border: 3px solid lightgray;
+    background-color: #f3f7f3;
+} 
+
+                    /* 
+
+                    I attempted to use these on my portfolio page, but just wasted a lot of time. I will get it eventually. See comment on portfolio.html
+
+                    .img-title {
+                        position: relative;
+                        text-shadow: 2px 2px #dce2e2;
+                        }
+                        
+                    .text-title {
+                        position: absolute;
+                        bottom: 0;
+                        background-color: #4aaaa5;
+                        color: white;
+                        left: 0; 
+                        width: auto;
+                        text-align: center;
+                    }
+
+                    .img-title:hover {
+                        text-shadow: 0px 0px #dce2e2;
+                        font-weight: bold;
+                        transform: scale(1.05);
+                        box-shadow: 10px 10px 5px #d3d3d3;
+                    } */
+
+
+/* ========================================     LAPTOP/DESKTOP VIEWPORTS     ======================================== */
+
+@media only screen and (min-width: 980px) and (max-width: 1920px) {
+
+        /* ========================================     HEADER/NAV STYLES     ======================================== */
+
+    nav {
+        width: 534px;
+        float: right;
+        padding: 23px 0;
+    }
+    
+    nav > a {
+        margin: 12px 20px;
+        text-shadow: 2px 2px #dce2e2;
+        
+    }
+    
+    nav > a:hover {
+        background-color: #4aaaa5;
+        color:#ffffff; 
+        text-shadow: 1px 1px #929b9b;
+    }
+
+        /* ========================================     GENERAL STYLES     ======================================== */
+
+    p {
+        padding: 0 95px;
+    }
+    .main {
+        top: 75px;
+    }
+
+        /* ========================================     ABOUT ME PAGE STYLES     ======================================== */
+
+
+.aboutme {
+    float:left;
+    padding-left: 20px;
+}
+
+.aboutimg {
+    float:left;
+    padding: 0 20px 20px 25px;
+}
+
+p.aboutme {
+    padding: 0 20px;
+    width: 600px;
+    float: left;
+}
+
+        /* ========================================     PORTFOLIO PAGE STYLES     ======================================== */
+
+    .gallery {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .gallery > a > img {
+        padding: 10px;
+    }
+    
+
+        /* ========================================     CONTACT PAGE STYLES     ======================================== */
+
+    .contact {
+        margin: 0 1%;
+    }
+
+    input {
+        padding: 0;
+        border-radius: 7px;
+    }
+
+    input[type=text]:focus {
+        border: 3px solid lightgray;
+        background-color: #f3f7f3;
+        padding: 12px 20px;
+        margin: 8px 0;
+    }
+
+    .input-pos {
+        position: absolute;
+        left: 215px;
+    }
+
+    .submit-button {
+        position: absolute;
+        left: 785px;
+        top: 400px;
+    }
+    
+    textarea {
+        margin: 3px 0;
+        border-radius: 7px;
+    }
+
+    textarea:focus {
+        border: 3px solid lightgray;
+        background-color: #f3f7f3;
+    }
+
+}
+
+
+/* ========================================     TABLET VIEWPORTS     ======================================== */
+
+
+
+@media only screen and (max-width: 979px) and (min-width: 641px)  {
+
+        /* ========================================     HEADER/NAV STYLES     ======================================== */
+
+    .wrapper {
+        width: 768px;
+    }
+
+    header {
+        font-size: 2.2em;
+        padding: 6px 5px 6px 21px;
+        width: 28%;
+        float: left;
+    }
+
+    .top {
+        height: auto;
+        width: 95%;
+        position: relative;
+        overflow: auto
+    }
+
+    nav {
+        width: 66%;
+        float: right;
+        padding: 13px 0;
+    }
+
+    nav > a {
+        padding: 4px 3px;
+        background-color: #4aaaa5;
+        color:#ffffff;  
+        margin: 12px 10px;
+        font-size: 1.1em;
+    }
+
+        /* ========================================     GENERAL STYLES     ======================================== */
+
+
+    .main {
+        width: 95%;
+        padding: 15px 0;
+        margin: 8px 0; 
+    }
+
+    footer {
+        font-size: .75em;
+        padding-top: 4px;
+        height: 23px;
+        margin-top: 30px;
+    }
+
+    p {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+        /* ========================================     ABOUT ME PAGE STYLES     ======================================== */
+
+    .aboutme {
+        width: 90%
+    }
+
+    p.aboutme {
+        width: 59%;
+        float: left;
+    }
+    
+    .aboutimg {
+        width: 38%;
+        margin: 0 2% 2.5% 0;
+        float: left;
+        
+    }
+    
+        /* ========================================     PORTFOLIO PAGE STYLES     ======================================== */
+
+    .gallery {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .gallery > a > img {
+        margin: 15px;
+
+        width: 45%;
+        height: 45%;
+    }
+    
+        /* ========================================     CONTACT PAGE STYLES     ======================================== */
+
+    input {
+        padding: 0;
+        border-radius: 7px;
+        
+    }
+
+    input[type=text]:focus {
+        border: 3px solid lightgray;
+        background-color: #f3f7f3;
+    }
+
+    .input-pos {
+        position: static;
+        width: 60%;
+        right: 30px;
+    }
+
+    .submit-button {
+        position: absolute;
+        float: left;
+        margin: 0 auto;
+    }
+
+    textarea {
+        margin: 3px 0;
+        border-radius: 7px;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    textarea:focus {
+        border: 3px solid lightgray;
+        background-color: #f3f7f3;
+    }
+}
+
+/* ========================================     MOBILE VIEWPORTS     ======================================== */
+
+@media only screen 
+and (max-width: 640px)
+and (min-width: 375px) {
+
+        /* ========================================     HEADER/NAV STYLES     ======================================== */
+
+    .wrapper {
+        width: 375px;
+    }
+
+    header {
+        font-size: 2em;
+        padding: 2px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .top {
+            /* height: 74px;<-------keep just in case i need it later */
+            /* I wasn't sure if height: auto was going to work, and I am trying to get 
+                rid of all pixel values in my viewport-specific styling */
+        height: auto;
+        width: 100%;
+        position: static;
+    }
+
+    nav {
+        width: 100%;
+        padding: 8px 0;
+    }
+
+    nav > a {
+        padding: 4px 3px;
+        background-color: #4aaaa5;
+        color:#ffffff;  
+        margin: 12px 10px;
+        font-size: .80em;
+    }
+
+        /* ========================================     GENERAL STYLES     ======================================== */
+
+
+    .main {
+        width: 100%;
+        padding: 15px 0;
+        margin: 4px 0; 
+    }
+
+    footer {
+        font-size: .55em;
+        padding-top: 4px;
+        height: 13px;
+        margin-top: 30px;
+    }
+
+    h1 {
+        padding: 0;
+        width: 100%;
+        text-align: center;
+        font-size: 1.3em;
+    }
+
+    h2 {
+        padding: 0;
+        width: 100%;
+        text-align: center;
+        font-size: 1.1em;
+    }
+
+    img {
+        width: 90%;
+        height: 90%;
+    }
+
+    p {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+        /* ========================================     ABOUT ME PAGE STYLES     ======================================== */
+
+    .aboutme {
+        width: 90%
+    }
+
+    p.aboutme {
+        width: 90%
+    }
+    
+    .aboutimg {
+        width: 99%;
+        margin: 1.4% 0 2% 0;
+    }
+    
+        /* ========================================     PORTFOLIO PAGE STYLES     ======================================== */
+
+    .gallery {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .gallery > a > img {
+        margin-top: 15px;
+    }
+    
+    
+        /* ========================================     CONTACT PAGE STYLES     ======================================== */
+
+    input {
+        padding: 0;
+        border-radius: 7px;
+        
+    }
+
+    input[type=text]:focus {
+        border: 3px solid lightgray;
+        background-color: #f3f7f3;
+    }
+
+    .input-pos {
+        position: static;
+        width: 60%;
+        right: 30px;
+    }
+
+    .submit-button {
+        position: absolute;
+        float: left;
+        margin: 0 auto;
+    }
+
+    textarea {
+        margin: 3px 0;
+        border-radius: 7px;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    textarea:focus {
+        border: 3px solid lightgray;
+        background-color: #f3f7f3;
+    }
+}
